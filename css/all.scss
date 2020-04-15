@@ -1,4 +1,6 @@
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   font-family: 微軟正黑體 !important;
 }
@@ -106,6 +108,10 @@ $font-size: 20px;
     &--style {
       border-bottom: 1px solid #ffffff;
       color: $text-primary;
+    }
+    &__border {
+      width: 1200px;
+      @include center;
     }
     &__msg {
       @include msg;
